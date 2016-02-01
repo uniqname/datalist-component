@@ -41,7 +41,7 @@ createComponent('data-list', {
             .map(child => list.appendChild(child));
 
         // attach shady styles
-        comp.insertBefore(defaultStyleSheet(), comp.children[0]);
+        document.head.insertBefore(defaultStyleSheet(), document.head.children[0]);
 
         //create value prop on component
         Object.defineProperty(comp, 'value', {
@@ -83,7 +83,7 @@ createComponent('data-list', {
 
         const focusClass = (e) => {
             const toggle = hasFocus(comp) ? 'add' : 'remove';
-            comp.classList[toggle]('active');
+            comp.classList[toggle]('focused');
         };
         //
         window.addEventListener('click', focusClass);

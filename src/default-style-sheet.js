@@ -13,12 +13,20 @@ export default () => {
 
         data-list input {
             width: 100%;
+            outline: none;
         }
 
         data-list shady-root > *,
         data-list shady-root > *::before,
         data-list shady-root > *::after {
             box-sizing: inherit;
+            font-size: inherit;
+            font-family: inherit;
+            background-color: inherit;
+            border: inherit;
+            padding: inherit;
+            margin: inherit;
+            color: inherit;
         }
 
         data-list data-list-options {
@@ -28,9 +36,14 @@ export default () => {
             overflow: auto;
             position: absolute;
             width: 100%;
+            background-color: hsla(0, 100%, 100%, .2);
         }
 
-        data-list.active data-list-options {
+        data-list.focused {
+            outline: 2px auto rgb(59, 153, 252);
+        }
+
+        data-list.focused data-list-options {
             display: block;
         }
 
@@ -43,7 +56,7 @@ export default () => {
             display: none;
             opacity: .6;
             padding: .125em .25em;
-            transition: all .1s ease-in-out;
+            transition: all .2s ease-in-out;
             align-items: baseline;
         }
 
@@ -59,8 +72,8 @@ export default () => {
             opacity: 1;
             background-color: hsla(0, 0%, 0%, .03);
             outline: none;
-            transform: scale(1.1);
-            transform-origin: center center;
+            transform: translateX(.25em);
+            transform-origin: left center;
         }
 
     `;
