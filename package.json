@@ -1,0 +1,39 @@
+{
+  "name": "datalist-polyfill-plus",
+  "version": "1.0.0",
+  "description": "Polyfill for datalist plus consistent + extendible UI",
+  "main": "datalist-polyfill-plus.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "webpack ./src/index.js index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uniqname/datalist-polyfill-plus.git"
+  },
+  "keywords": [
+    "datalist",
+    "polyfill"
+  ],
+  "author": "Cory Brown <oh.wise.man@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uniqname/datalist-polyfill-plus/issues"
+  },
+  "homepage": "https://github.com/uniqname/datalist-polyfill-plus#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-core": "^6.4.5",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "instant-curry": "^1.2.0"
+  },
+  "babel": {
+    "presets": [
+      "stage-0",
+      "es2015"
+    ]
+  }
+}
