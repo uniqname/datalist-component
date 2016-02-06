@@ -41,7 +41,7 @@
             }
 
             data-list.focused {
-                outline: .25em outset hsla(0, 100%, 100%, .4)
+                /*outline: .25em outset hsla(0, 100%, 100%, .4)*/
             }
         </style>
     </head>
@@ -50,58 +50,62 @@
         <h2>A dependency free component</h2>
 
         <section>
+            <form class="" action="." method="get">
 
-            <data-list>
-                <data-list-option value="AL">Alabama</data-list-option>
-                <data-list-option value="AK">Alaska</data-list-option>
-                <data-list-option value="AZ">Arizona</data-list-option>
-                <data-list-option value="AR">Arkansas</data-list-option>
-                <data-list-option value="CA">California</data-list-option>
-                <data-list-option value="CT">Connecticut</data-list-option>
-                <data-list-option value="DE">Deleware</data-list-option>
-                <data-list-option value="FL">Florida</data-list-option>
-                <data-list-option value="GA">Georgia</data-list-option>
-                <data-list-option value="HI">Hawaii</data-list-option>
-                <data-list-option value="ID">Idaho</data-list-option>
-                <data-list-option value="IL">Illinois</data-list-option>
-                <data-list-option value="IN">Indiana</data-list-option>
-                <data-list-option value="IA">Iowa</data-list-option>
-                <data-list-option value="KA">Kansas</data-list-option>
-                <data-list-option value="KY">Kentucky</data-list-option>
-                <data-list-option value="LA">Louisiana</data-list-option>
-                <data-list-option value="ME">Maine</data-list-option>
-                <data-list-option value="MD">Maryland</data-list-option>
-                <data-list-option value="MA">Massachusetts</data-list-option>
-                <data-list-option value="MI">Michigan</data-list-option>
-                <data-list-option value="MN">Minnesota</data-list-option>
-                <data-list-option value="MS">Mississippi</data-list-option>
-                <data-list-option value="MO">Missouri</data-list-option>
-                <data-list-option value="MT">Montana</data-list-option>
-                <data-list-option value="NE">Nebraska</data-list-option>
-                <data-list-option value="NV">Nevada</data-list-option>
-                <data-list-option value="NH">New Hampshire</data-list-option>
-                <data-list-option value="NJ">New Jersey</data-list-option>
-                <data-list-option value="NM">New Mexico</data-list-option>
-                <data-list-option value="NY">New York</data-list-option>
-                <data-list-option value="NC">North Carolina</data-list-option>
-                <data-list-option value="ND">North Dakota</data-list-option>
-                <data-list-option value="OH">Ohio</data-list-option>
-                <data-list-option value="OK">Oklahoma</data-list-option>
-                <data-list-option value="OR">Oregon</data-list-option>
-                <data-list-option value="PA">Pennsylvania</data-list-option>
-                <data-list-option value="RI">Rhode Island</data-list-option>
-                <data-list-option value="SC">South Carolina</data-list-option>
-                <data-list-option value="SD">South Dakota</data-list-option>
-                <data-list-option value="TN">Tennessee</data-list-option>
-                <data-list-option value="TX">Texas</data-list-option>
-                <data-list-option value="UT">Utah</data-list-option>
-                <data-list-option value="VT">Vermont</data-list-option>
-                <data-list-option value="VA">Virginia</data-list-option>
-                <data-list-option value="WA">Washington</data-list-option>
-                <data-list-option value="WV">West Virginia</data-list-option>
-                <data-list-option value="WI">Wisconsen</data-list-option>
-                <data-list-option value="WY">Wyoming</data-list-option>
-            </data-list>
+                <data-list name="state">
+                    <data-list-option value="AL">Alabama</data-list-option>
+                    <data-list-option value="AK">Alaska</data-list-option>
+                    <data-list-option value="AZ">Arizona</data-list-option>
+                    <data-list-option value="AR">Arkansas</data-list-option>
+                    <data-list-option value="CA">California</data-list-option>
+                    <data-list-option value="CT">Connecticut</data-list-option>
+                    <data-list-option value="DE">Deleware</data-list-option>
+                    <data-list-option value="FL">Florida</data-list-option>
+                    <data-list-option value="GA">Georgia</data-list-option>
+                    <data-list-option value="HI">Hawaii</data-list-option>
+                    <data-list-option value="ID">Idaho</data-list-option>
+                    <data-list-option value="IL">Illinois</data-list-option>
+                    <data-list-option value="IN">Indiana</data-list-option>
+                    <data-list-option value="IA">Iowa</data-list-option>
+                    <data-list-option value="KA">Kansas</data-list-option>
+                    <data-list-option value="KY">Kentucky</data-list-option>
+                    <data-list-option value="LA">Louisiana</data-list-option>
+                    <data-list-option value="ME">Maine</data-list-option>
+                    <data-list-option value="MD">Maryland</data-list-option>
+                    <data-list-option value="MA">Massachusetts</data-list-option>
+                    <data-list-option value="MI">Michigan</data-list-option>
+                    <data-list-option value="MN">Minnesota</data-list-option>
+                    <data-list-option value="MS">Mississippi</data-list-option>
+                    <data-list-option value="MO">Missouri</data-list-option>
+                    <data-list-option value="MT">Montana</data-list-option>
+                    <data-list-option value="NE">Nebraska</data-list-option>
+                    <data-list-option value="NV">Nevada</data-list-option>
+                    <data-list-option value="NH">New Hampshire</data-list-option>
+                    <data-list-option value="NJ">New Jersey</data-list-option>
+                    <data-list-option value="NM">New Mexico</data-list-option>
+                    <data-list-option value="NY">New York</data-list-option>
+                    <data-list-option value="NC">North Carolina</data-list-option>
+                    <data-list-option value="ND">North Dakota</data-list-option>
+                    <data-list-option value="OH">Ohio</data-list-option>
+                    <data-list-option value="OK">Oklahoma</data-list-option>
+                    <data-list-option value="OR">Oregon</data-list-option>
+                    <data-list-option value="PA">Pennsylvania</data-list-option>
+                    <data-list-option value="RI">Rhode Island</data-list-option>
+                    <data-list-option value="SC">South Carolina</data-list-option>
+                    <data-list-option value="SD">South Dakota</data-list-option>
+                    <data-list-option value="TN">Tennessee</data-list-option>
+                    <data-list-option value="TX">Texas</data-list-option>
+                    <data-list-option value="UT">Utah</data-list-option>
+                    <data-list-option value="VT">Vermont</data-list-option>
+                    <data-list-option value="VA">Virginia</data-list-option>
+                    <data-list-option value="WA">Washington</data-list-option>
+                    <data-list-option value="WV">West Virginia</data-list-option>
+                    <data-list-option value="WI">Wisconsen</data-list-option>
+                    <data-list-option value="WY">Wyoming</data-list-option>
+                </data-list>
+
+                <button>Submit</button>
+            </form>
         </section>
 
         <script src="data-list.js"></script>
