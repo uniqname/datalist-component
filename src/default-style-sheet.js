@@ -11,9 +11,11 @@ export default () => {
             position: relative;
         }
 
-        data-list input {
+        data-list input[type="text"] {
             width: 100%;
             outline: none;
+            display: block;
+            text-align: left;
         }
 
         data-list shady-root > *,
@@ -29,7 +31,7 @@ export default () => {
             color: inherit;
         }
 
-        data-list data-list-options {
+        data-list shady-root [select] {
             box-shadow: 0 0 2px hsla(0, 0%, 0%, .2);
             display: none;
             max-height: 80vh;
@@ -43,7 +45,7 @@ export default () => {
             outline: 2px auto rgb(59, 153, 252);
         }
 
-        data-list.focused data-list-options {
+        data-list.focused [select] {
             display: block;
         }
 
